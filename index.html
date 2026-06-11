@@ -434,5 +434,26 @@ Fuel your fitness journey with our top-performing supplements.
 <a href="tel:+916378189773" class="call-btn">
 <i class="fas fa-phone"></i>
 </a>
+<script>
+document.getElementById("leadForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let goal = document.getElementById("goal").value;
+
+    let message =
+`🏋️ New Fitness Inquiry
+
+👤 Name: ${name}
+📞 Mobile: ${phone}
+🎯 Goal: ${goal}`;
+
+    let whatsappURL =
+`https://wa.me/916378189773?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
 </body>
 </html>
