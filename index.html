@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muscle Matrix</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -221,7 +221,15 @@ transition:.3s;
 .whatsapp:hover{
 transform:scale(1.1);
 }
+@keyframes pulse {
+0% {transform: scale(1);}
+50% {transform: scale(1.1);}
+100% {transform: scale(1);}
+}
 
+.whatsapp{
+animation: pulse 2s infinite;
+}
 </style>
 </style>
 </head>
@@ -314,8 +322,8 @@ Fuel your fitness journey with our top-performing supplements.
 
 </footer>
 
-<a href="https://wa.me/916378189773" class="whatsapp">
-💬
+<a href="https://wa.me/916378189773?text=Hello%20Muscle%20Matrix,%20I%20want%20to%20know%20more%20about%20your%20fitness%20plans." class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
 </a>
 
 </body>
